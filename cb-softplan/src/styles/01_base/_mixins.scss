@@ -1,0 +1,11 @@
+//_mixins.scss - Mixins
+@mixin flexbox {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+.flexbox {
+    @include flexbox;
+}
