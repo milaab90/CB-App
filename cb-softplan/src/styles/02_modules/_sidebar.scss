@@ -5,13 +5,15 @@
     width: 13.750em;
     position: fixed;
 
-    .sidebar__wrapper {
-        padding: 1.125em 1.063em;
-    }
     .sidebar__label {
         color: $text-gray;
         font-family: 'Segoe Ui SemiBold';
         font-size: 0.750em;
-        margin: 0;
+        padding: 1.125em 1.063em;
+        margin: 0 0 1.1em 0;
+        
+    }
+    .sidebar__button {
+        width: 100%;
     }
 }

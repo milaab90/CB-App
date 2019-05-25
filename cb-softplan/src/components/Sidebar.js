@@ -1,10 +1,11 @@
 import React from 'react';
+import SidebarProcessos from './SidebarProcessos';
 
 const Sidebar = () => {
     return(
         <div className="sidebar">
             <div className="sidebar__wrapper">
-                <p className="sidebar__label">Processos</p>
+                <SidebarProcessos />
             </div>
         </div>
     )
