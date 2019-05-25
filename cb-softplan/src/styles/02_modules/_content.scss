@@ -2,4 +2,8 @@
     width: calc(100% - 13.750em);
     position: relative;
     left: 13.750em;
+
+    .MuiContainer-root {
+        padding: 0 1.125em;
+    }
 }

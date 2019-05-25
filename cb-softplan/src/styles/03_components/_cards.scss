@@ -1,0 +1,107 @@
+//_cards.scss - Cards style
+.cards {
+    background-color: $white;
+    width: 100%;
+    margin-top: 1.375em;
+
+    .cards__wrapper {
+        @include flexbox;
+        align-items: center;
+        flex-flow: row;
+        padding: 1.688em;
+    }
+    .cards__info {
+        width: 40%;
+    }
+    .cards__folder {
+        width: 20%;
+        @include flexbox;
+        flex-flow: row;
+        align-items: center;
+
+        svg {
+            transform: rotate(90deg);
+            margin-right: 0.625em;
+
+            path {
+                fill: $text-gray;
+            }
+        }
+        p {
+            color: $text-gray;
+            font-family: 'Segoe Ui Regular';
+            text-align: left;
+            font-size: 0.875em; 
+            margin: 0;
+        }
+    }
+    .cards__tag {
+        width: 20%;
+
+        svg {
+            path {
+                fill: $text-gray;
+            }
+        }
+    }
+    .cards__spacer {
+        border-right: 1px solid $border-gray;
+        height: 1.250em;
+        margin: 0 2em;
+    }
+    .info__name {
+        color: $text-gray;
+        font-family: 'Segoe Ui Regular';
+        text-align: left;
+        font-size: 0.750em;
+        @include flexbox;
+        flex-flow: row;
+        align-items: center;
+
+        p {
+            padding: 0 0.250em;
+        }
+        svg {
+            path {
+                fill: $green;
+            }
+        }
+    }
+    .info__procedure {
+        color: $text-gray;
+        font-family: 'Segoe Ui SemiBold';
+        text-align: left;
+        font-size: 0.875em;
+
+        p {
+            margin: 0;
+        }
+
+        span {
+            font-family: 'Segoe Ui Bold';
+        }
+    }
+    .info__extra {
+        font-family: 'Segoe Ui Regular';
+        @include flexbox;
+        align-items: center;
+
+        .extra__label {
+            color: $text-gray;
+            text-align: left;
+            font-size: 0.750em;
+        }
+        .extra__badge {
+            color: $text-gray;
+            font-size: 0.688em;
+            background-color: $lightgray;
+            border-radius: 5px;
+            padding: 0 0.5em;
+            margin: 0 0.5em;
+
+            &--red {
+                color: $red;
+            }
+        }
+    }
+}
