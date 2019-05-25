@@ -1,0 +1,17 @@
+//_sidebar.scss - Sidebar style
+.sidebar {
+    background-color: $lightgray;
+    height: 100%;
+    width: 13.750em;
+    position: fixed;
+
+    .sidebar__wrapper {
+        padding: 1.125em 1.063em;
+    }
+    .sidebar__label {
+        color: $text-gray;
+        font-family: 'Segoe Ui SemiBold';
+        font-size: 0.750em;
+        margin: 0;
+    }
+}

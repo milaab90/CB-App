@@ -1,1 +1,9 @@
 //_home.scss - Home style
+.middleWrapper {
+    @include flexbox;
+    flex-flow: row;
+    position: absolute;
+    top: 3.5em;
+    left: 0;
+    width: 100%;
+}

@@ -1,10 +1,7 @@
 //_topbar.scss - Topbar style
 .topbar {
-    background-color: $lightgray;
+    background-color: $lightergray;
     width: 100%;
-    position: absolute;
-    top: 3.500em;
-    left: 0;
 
     .topbar__wrapper {
         @include flexbox;
@@ -12,17 +9,11 @@
         justify-content: space-between;
         padding: 1.125em 0;
     }
-    .topbar__label {
-        color: $text-gray;
-        font-family: 'Segoe Ui SemiBold';
-        font-size: 0.750em;
-        margin: 0;
-    }
     .topbar__searchBox {
         @include flexbox;
         align-items: flex-start;
-        width: calc(100% - 13.750em);
-        padding: 0 1.813em;
+        width: 100%;
+        margin-left: 1.813em;
 
         .searchBox__icon {
             margin-right: 0.5em;
