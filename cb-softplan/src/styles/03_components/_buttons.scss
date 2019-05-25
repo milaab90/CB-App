@@ -1,5 +1,5 @@
 //_buttons.scss - Button style
-.sidebar__button {
+.processos__button {
     @extend .reset-button;
     color: $text-gray;
     font-family: 'Segoe Ui SemiBold';
@@ -14,6 +14,7 @@
 
     &.active {
         background-color: $bg-gray;
+        border-left: 3px solid $blue;
     }
 
     svg {
@@ -27,6 +28,47 @@
     }
     .button__total {
         font-size: 0.750em;
+        text-align: right;
     }
     
 }
+.etiquetas__button {
+    @extend .reset-button;
+    color: $text-gray;
+    font-family: 'Segoe Ui Regular';
+    text-align: left;
+    font-size: 0.875em;
+    display: block;
+    padding: 0.563em 0.938em;
+    height: 38px;
+    @include flexbox;
+    align-items: center;
+    justify-content: space-between;
+
+    .button__color {
+        height: 0.375em;
+        width: 1em;
+        display: inline-block;
+        margin-right: 0.5em;
+
+        &--orange {
+            background-color: $orange;
+        }
+    }
+    .button__icon {
+        svg {
+            width: 1em;
+            display: inline-block;
+            margin-right: 0.5em;
+
+            path {
+                fill: $text-gray;
+            }
+        }
+    }
+    .button__total {
+        font-size: 0.750em;
+        text-align: right;
+    }
+}
+

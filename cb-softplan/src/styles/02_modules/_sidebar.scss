@@ -13,7 +13,29 @@
         margin: 0 0 1.1em 0;
         
     }
-    .sidebar__button {
-        width: 100%;
+    .sidebar__processos {
+        .processos__button {
+            width: 100%;
+        }
+    }
+    .sidebar__etiquetas {
+        height: calc(70vh - 2.500em);
+        margin: 0.5em 0;
+
+        .etiquetas__button {
+            width: 100%;
+        }
+    }
+    .sidebar__feitos {
+        border-top: 1px solid $border-gray;
+
+        .feitos__label {
+            color: $text-gray;
+            font-family: 'Segoe Ui SemiBold';
+            text-align: left;
+            font-size: 0.875em;
+            display: block;
+            padding: 0.563em 0.938em;
+        }
     }
 }

@@ -5,7 +5,7 @@ const SidebarProcessos = () => {
     return(
         <div className="sidebar__processos">
             <p className="sidebar__label">Processos</p>
-            <button className="sidebar__button active">
+            <button className="processos__button active">
                 <span className="button__label">
                     <BookmarkIcon />
                     Todos Processos
