@@ -1,6 +1,8 @@
 //_resets.scss - Reset for default 'user agent' stylesheet
 body {
    background-color: $bg-gray; 
+   height: 100vh;
+   overflow: hidden;
 }
 .reset-button {
    border: none;
