@@ -38,7 +38,7 @@ class Cards extends React.Component {
         if (error) {
             return <div>Aconteceu um erro! Tente novamente mais tarde!</div>;
           } else if (!isLoaded) {
-            return <div>Loading...</div>;
+            return <div className="loading"><p>Carregando...</p></div>;
           }
           else {
             return(

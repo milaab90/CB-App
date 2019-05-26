@@ -15,4 +15,20 @@
         padding: 0 1.125em;
         padding-bottom: 5.000em;
     }
+    .loading {
+        color: $text-gray;
+        font-family: 'Segoe Ui Regular';
+        font-size: 1.5em;
+        background: $white;
+        height: 100vh;
+        width: 100%;
+        @include flexbox;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1.375em;
+        
+        p {
+            animation: pulse 2s infinite;
+        }
+    }
 }
