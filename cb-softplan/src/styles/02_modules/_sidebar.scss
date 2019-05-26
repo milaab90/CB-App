@@ -34,6 +34,22 @@
 
         .etiquetas__button {
             width: 100%;
+
+            &.active {
+                position: relative;
+
+                .labelInput {
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    height: 2em;
+                    width: 75%;
+                }
+            }
+
+            .labelInput {
+                display: none;
+            }
         }
     }
     .sidebar__feitos {

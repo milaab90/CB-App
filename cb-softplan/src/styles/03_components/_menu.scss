@@ -1,0 +1,33 @@
+//_menu.scss - Topbar style
+#tag__menu{
+    span {
+        color: $text-gray;
+        font-family: 'Segoe Ui Regular';
+        font-size: 0.875em;
+        display: block;
+        padding: 0.563em;
+        margin-bottom: 0.625em;
+    }
+    ul {
+        padding: 0.563em;
+    }
+    li {
+        color: $white;
+        font-family: 'Segoe Ui Regular';
+        font-size: 0.750em;
+        background: $text-gray;
+        min-height: 1.563em;
+        margin: 0.313em 0;
+        min-width: 167px;
+
+        &:hover {
+            opacity: 0.7;
+        }
+        &.orange {
+            background: $orange;
+        }
+        &.blue {
+            background: $lightblue;
+        }
+    }
+}
