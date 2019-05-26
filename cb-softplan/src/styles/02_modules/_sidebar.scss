@@ -5,6 +5,12 @@
     width: 13.750em;
     position: fixed;
 
+    @media #{$mobile} {
+        height: auto;
+        width: 100%;
+        position: unset;
+    }
+
     .sidebar__label {
         color: $text-gray;
         font-family: 'Segoe Ui SemiBold';
@@ -21,6 +27,10 @@
     .sidebar__etiquetas {
         height: calc(70vh - 2.500em);
         margin: 0.5em 0;
+
+        @media #{$mobile} {
+            height: auto;
+        }
 
         .etiquetas__button {
             width: 100%;

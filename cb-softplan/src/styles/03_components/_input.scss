@@ -1,18 +1,16 @@
 //_input.scss - Input style
 .search__group {
     position: relative;
-
-    label {
-        color: $text-gray;
-        font-family: 'Segoe Ui Regular';
-        font-size: 0.750em;
-        position: absolute;
-        left: 0;
-    }
+    
     input {
         background: transparent;
         border: 0;
-        position: absolute;
-        left: 0;
+        color: $text-gray;
+        font-family: 'Segoe Ui Regular';
+        font-size: 0.750em;
+
+        &:focus {
+            outline: 0;
+        }
     }
 }

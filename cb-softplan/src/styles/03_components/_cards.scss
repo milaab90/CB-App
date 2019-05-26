@@ -9,15 +9,28 @@
         align-items: center;
         flex-flow: row;
         padding: 1.688em;
+
+        @media #{$mobile} {
+            flex-flow: column;
+        }
     }
     .cards__info {
         width: 40%;
+
+        @media #{$mobile} {
+            width: 100%;
+        }
     }
     .cards__folder {
         width: 20%;
         @include flexbox;
         flex-flow: row;
         align-items: center;
+
+        @media #{$mobile} {
+            width: 100%;
+            margin: 1em 0;
+        }
 
         svg {
             transform: rotate(90deg);
@@ -38,6 +51,11 @@
     .cards__tag {
         width: 20%;
 
+        @media #{$mobile} {
+            width: 100%;
+            margin: 1em 0;
+        }
+
         svg {
             path {
                 fill: $text-gray;
@@ -48,6 +66,10 @@
         border-right: 1px solid $border-gray;
         height: 1.250em;
         margin: 0 2em;
+
+        @media #{$mobile} {
+            display: none;
+        }
     }
     .info__name {
         color: $text-gray;
