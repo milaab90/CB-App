@@ -45,6 +45,10 @@
     align-items: center;
     justify-content: space-between;
 
+    &:hover {
+        opacity: 0.7;
+    }
+
     .button__color {
         height: 0.375em;
         width: 1em;
