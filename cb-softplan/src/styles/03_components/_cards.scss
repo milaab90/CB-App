@@ -59,6 +59,11 @@
         @media #{$mobile} {
             width: 100%;
             margin: 1em 0;
+
+            .MuiButton-text {
+                padding: 0;
+                min-width: unset;
+            }
         }
 
         svg {
