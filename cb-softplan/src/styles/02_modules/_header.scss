@@ -1,0 +1,40 @@
+//_header.scss - Header style
+.headerNav {
+    background-color: $blue;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    .headerNav__wrapper {
+        @include flexbox;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.750em 1.063em;
+    }
+    .headerNav__logo {
+        color: $white;
+        font-family: 'Segoe Ui SemiBold';
+        font-size: 1.125em;
+        margin: 0;
+        text-transform: uppercase;
+    }
+    .headerNav__user {
+        background-color: $white;
+        @include flexbox;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        height: 2em;
+        width: 2em;
+
+        svg {
+            height: 1em;
+            width: 1em;
+
+            path {
+                fill: $blue;
+            }
+        }
+    }
+}

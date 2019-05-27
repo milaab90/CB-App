@@ -1,0 +1,67 @@
+//_sidebar.scss - Sidebar style
+.sidebar {
+    background-color: $lightgray;
+    height: 100%;
+    width: 13.750em;
+    position: fixed;
+
+    @media #{$mobile} {
+        height: auto;
+        width: 100%;
+        position: unset;
+    }
+
+    .sidebar__label {
+        color: $text-gray;
+        font-family: 'Segoe Ui SemiBold';
+        font-size: 0.750em;
+        padding: 1.125em 1.063em;
+        margin: 0 0 1.1em 0;
+        
+    }
+    .sidebar__processos {
+        .processos__button {
+            width: 100%;
+        }
+    }
+    .sidebar__etiquetas {
+        height: calc(70vh - 2.500em);
+        margin: 0.5em 0;
+
+        @media #{$mobile} {
+            height: auto;
+        }
+
+        .etiquetas__button {
+            width: 100%;
+
+            &.active {
+                position: relative;
+
+                .labelInput {
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    height: 2em;
+                    width: 75%;
+                }
+            }
+
+            .labelInput {
+                display: none;
+            }
+        }
+    }
+    .sidebar__feitos {
+        border-top: 1px solid $border-gray;
+
+        .feitos__label {
+            color: $text-gray;
+            font-family: 'Segoe Ui SemiBold';
+            text-align: left;
+            font-size: 0.875em;
+            display: block;
+            padding: 0.563em 0.938em;
+        }
+    }
+}

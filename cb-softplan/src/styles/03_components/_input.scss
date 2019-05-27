@@ -1,0 +1,24 @@
+//_input.scss - Input style
+input,
+textarea {
+    color: $dark-gray;
+    font-family: 'Segoe Ui Regular';
+    font-size: 0.875em;
+
+    &:focus {
+        outline: 0;
+    }
+}
+.search__group {
+    position: relative;
+    
+    input {
+        background: transparent;
+        border: 0;
+    }
+}
+.labelInput {
+    &:focus {
+        border: 1px solid $blue;
+    }
+}

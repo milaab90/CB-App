@@ -1,0 +1,39 @@
+//_topbar.scss - Topbar style
+.topbar {
+    background-color: $lightergray;
+    width: 100%;
+
+    .topbar__wrapper {
+        @include flexbox;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.125em 0;
+    }
+    .topbar__searchBox {
+        @include flexbox;
+        align-items: flex-start;
+        width: 100%;
+        margin-left: 1.813em;
+
+        .searchBox__icon {
+            margin-right: 0.5em;
+            
+            svg {
+                height: 1em;
+                width: 1em;
+
+                path {
+                    fill: $icon-gray;
+                }
+            }
+        }
+        .searchBox__input {
+            width: 100%;
+            .search__group {
+                input{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

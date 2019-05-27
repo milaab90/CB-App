@@ -1,0 +1,13 @@
+//_typography.scss - Typography and Font Family
+@font-face {
+    font-family: 'Segoe Ui Regular';
+    src: url('fonts/segoeui.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Segoe Ui Bold';
+    src: url('fonts/segoeuib.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Segoe Ui SemiBold';
+    src: url('fonts/seguisb_1.ttf') format('truetype');
+}
