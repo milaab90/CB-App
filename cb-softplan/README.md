@@ -1,9 +1,8 @@
-This project was created for "Desafio técnico da vaga de Front-end Desingner"
+This project was created for "Desafio técnico da vaga de Front-end Designer". This app was created with [Create React App].
 
 ## Available Dependencies
 
-Material UI from @material-ui/core;
-Sass from node-sass;
+React / React-Dom / Material UI from @material-ui/core / Sass from node-sass
 
 ## Available Scripts
 
